@@ -1,0 +1,28 @@
+{
+  "name": "Fullstack-Zinda-Law",
+  "description": "MVP demo for Zinda Law",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "NEXT_DISABLE_DEV_INDICATOR=1 next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "15.5.4",
+    "openai": "^6.2.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "dotenv": "^17.2.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4"
+  },
+  "main": "index.js",
+  "author": "N0repi",
+  "license": "MIT"
+}

@@ -1,0 +1,46 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What should I do immediately after an accident?",
+      "answer": "After an accident, ensure everyone's safety first. Get the information from any other party involved, and if it's an auto accident, get the driver's license number and insurance information.",
+      "category": "personal-injury",
+      "tags": ["accidents", "first-steps", "emergency", "auto-accident"]
+    },
+    {
+      "id": 2,
+      "question": "What should I do if I was injured in the accident?",
+      "answer": "Get information on all doctors or hospitals that you were treated by, including any healthcare insurance you have. This documentation is crucial for your case.",
+      "category": "personal-injury",
+      "tags": ["accidents", "medical", "injury", "documentation"]
+    },
+    {
+      "id": 3,
+      "question": "I am unable to work because of the injury from an accident. What should I do?",
+      "answer": "See if your employer has any disability coverage that may pay you all or part of your lost income. If your employer does not have disability coverage, check with your State agency about SSI and benefits.",
+      "category": "personal-injury",
+      "tags": ["disability", "lost-wages", "employment", "benefits"]
+    },
+    {
+      "id": 4,
+      "question": "I lost my deposition transcript. Where can I obtain a new one?",
+      "answer": "Contact the paralegal at your office to see if they have a copy of the transcript. Let the paralegal know the date of your deposition and the case it is regarding. There is likely a digital copy available.",
+      "category": "legal-process",
+      "tags": ["deposition", "transcript", "documents", "legal-procedures"]
+    },
+    {
+      "id": 5,
+      "question": "I was served with a subpoena to take a deposition. What should I do?",
+      "answer": "Do not contact the attorneys whose name is on the subpoena. Contact our paralegal to make a copy of the subpoena. Be sure to include the name of the parties in the subpoena and date you were served. Also let the paralegal know if the subpoena requires you to be in court or give a deposition, or if it asks you to produce documents.",
+      "category": "legal-process",
+      "tags": ["subpoena", "deposition", "legal-procedures", "court"]
+    },
+    {
+      "id": 6,
+      "question": "I was contacted by an investigator to give a statement. What should I do?",
+      "answer": "Do not contact the investigator. Contact our paralegal and provide them with the investigator's information. The paralegal will respond accordingly on your behalf.",
+      "category": "legal-process",
+      "tags": ["investigator", "statement", "legal-protection"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/* AskButton.module.css */
+
+.askButton {
+  background: #3b82f6;
+}
+
+.askButton:hover {
+  background: #2563eb;
+}

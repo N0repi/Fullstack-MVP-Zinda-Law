@@ -1,0 +1,366 @@
+/* index.module.css */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+/* Dark mode styles */
+.main.dark {
+  background: linear-gradient(to bottom, #1a1a1a, #2d3748);
+}
+
+.main.dark .page {
+  background: #374151;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.main.dark .page h1 {
+  color: #f9fafb;
+}
+
+.main.dark .page p {
+  color: #d1d5db;
+}
+
+.main.dark .mutableForm input {
+  background: #4b5563;
+  border-color: #6b7280;
+  color: #f9fafb;
+}
+
+.main.dark .mutableForm input::placeholder {
+  color: #9ca3af;
+}
+
+.main.dark .mutableForm input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.main.dark .mutableForm button {
+  background: #3b82f6;
+}
+
+.main.dark .mutableForm button:hover {
+  background: #2563eb;
+}
+
+/* Dark mode toggle button */
+.darkModeToggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e5e7eb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.darkModeToggle:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.darkModeToggle:active {
+  transform: scale(0.95);
+}
+
+.main.dark .darkModeToggle {
+  background: rgba(55, 65, 81, 0.9);
+  border-color: #6b7280;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  text-align: center;
+}
+
+.page p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin: 0;
+  text-align: center;
+}
+
+.mutableForm {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.mutableForm input {
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.mutableForm input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.mutableForm input::placeholder {
+  color: #9ca3af;
+}
+
+.mutableForm button {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.mutableForm button:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.mutableForm button:active {
+  transform: translateY(0);
+}
+
+.mutableForm button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Error Message */
+.errorMessage {
+  width: 100%;
+  padding: 1rem;
+  background: #fee2e2;
+  border: 2px solid #ef4444;
+  border-radius: 8px;
+  color: #991b1b;
+  margin-top: 1rem;
+}
+
+.main.dark .errorMessage {
+  background: #7f1d1d;
+  border-color: #dc2626;
+  color: #fecaca;
+}
+
+/* Answer Container */
+.answerContainer {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.answerContainer h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.main.dark .answerContainer h2 {
+  color: #f9fafb;
+}
+
+.answer {
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+
+.main.dark .answer {
+  background: #4b5563;
+  color: #e5e7eb;
+  border-left-color: #60a5fa;
+}
+
+/* FAQs Container */
+.faqsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqsContainer h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.main.dark .faqsContainer h3 {
+  color: #f9fafb;
+}
+
+.faqCard {
+  padding: 1.25rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.main.dark .faqCard {
+  background: #4b5563;
+  border-color: #6b7280;
+}
+
+.faqCard h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.main.dark .faqCard h4 {
+  color: #f3f4f6;
+}
+
+.faqCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+.main.dark .faqCard p {
+  color: #d1d5db;
+}
+
+.faqMeta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.category {
+  padding: 0.25rem 0.75rem;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.main.dark .category {
+  background: #1e3a8a;
+  color: #bfdbfe;
+}
+
+.score {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.main.dark .score {
+  color: #9ca3af;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .page {
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .page h1 {
+    font-size: 1.875rem;
+  }
+
+  .page p {
+    font-size: 1rem;
+  }
+
+  .mutableForm {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .mutableForm button {
+    width: 100%;
+  }
+
+  .answerContainer h2 {
+    font-size: 1.25rem;
+  }
+
+  .answer {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .faqCard {
+    padding: 1rem;
+  }
+
+  .faqCard h4 {
+    font-size: 1rem;
+  }
+
+  .faqMeta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
