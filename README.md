@@ -6,7 +6,7 @@ I kept the code really simple, opting to use purely JavaScript for the MVP. I co
 
 ## Setup
 
-- Add an OpenAI API key to .env.example as the value for `OPENAI_API_KEY`
+- Add an OpenAI API key to .env.example as the value for `OPENAI_API_KEY` | eg. `OPENAI_API_KEY='sk-proj...'`
 - rename file from _.env.example_ to `.env`
 
 - Open terminal and run
